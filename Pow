@@ -2,8 +2,9 @@
 #include <iostream>
 
 using namespace std;
+int adim;
 long pow (int x,int n){
-     
+     adim++;
      if(n==0) return 1;
      if(n==1) return x;
      if (n%2==0) return pow(x*x,n/2);
@@ -37,7 +38,7 @@ int main(int argc, char *argv[])
     cout<<"pow sonucu:";
     
     cout << pow(a,b)<<endl;
-    
+    cout << "adim sayisi: "<< adim<<endl;
     system("PAUSE");
     return EXIT_SUCCESS;
    
